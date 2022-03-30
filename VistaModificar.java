@@ -1,5 +1,4 @@
 import javax.swing.JOptionPane;
-
 public class VistaModificar extends javax.swing.JFrame {
 
     Contacto c;
@@ -40,7 +39,7 @@ public class VistaModificar extends javax.swing.JFrame {
 
         jLabel2.setText("NOMBRE:");
 
-        jLabel3.setText("APELLIDO:");
+        jLabel3.setText("Fecha de Nacimiento:");
 
         tfNombre.setFont(new java.awt.Font("Tahoma", 1, 12));
 

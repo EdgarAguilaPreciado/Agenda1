@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.*;
+import java.awt.BorderLayout;
+
 
 public class VistaContactos extends javax.swing.JFrame {
     public static void main(String args[]) {
@@ -41,7 +44,7 @@ public class VistaContactos extends javax.swing.JFrame {
         
         modelo.addColumn("CODIGO");
         modelo.addColumn("NOMBRE");
-        modelo.addColumn("APELLIDO");
+        modelo.addColumn("Fecha de Nacimiento");
         mostrarDatos();
     }
     private javax.swing.JButton btnEliminar,btnGuardar,btnModificar,btnNumeros,btnTipos,btn;
@@ -140,7 +143,7 @@ public class VistaContactos extends javax.swing.JFrame {
 
         lblNombre.setText("NOMBRE:");
 
-        lblApellido.setText("APELLIDO:");
+            lblApellido.setText("Fecha de Nacimiento:");
 
         tfNombre.setFont(new java.awt.Font("Tahoma", 1, 12)); 
 

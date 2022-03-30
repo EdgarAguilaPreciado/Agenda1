@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 public class Login extends javax.swing.JFrame {
     private javax.swing.JPasswordField Password;
     private javax.swing.JButton btnIngresar;
-    private javax.swing.JLabel lblContraseña,lblTitulo,lblUsuario;
+    private javax.swing.JLabel lblContrase,lblTitulo,lblUsuario;
     private javax.swing.JTextField txtUsuario;
     public Login() {
         initComponents();
@@ -11,7 +11,7 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         lblUsuario = new javax.swing.JLabel();
-        lblContraseña = new javax.swing.JLabel();
+        lblContrase = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
         btnIngresar = new javax.swing.JButton();
         lblTitulo = new javax.swing.JLabel();
@@ -21,7 +21,7 @@ public class Login extends javax.swing.JFrame {
 
         lblUsuario.setText("Usuario");
 
-        lblContraseña.setText("Contraseña");
+        lblContrase.setText("Contra");
 
         btnIngresar.setText("Ingresar");
         btnIngresar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -44,7 +44,7 @@ public class Login extends javax.swing.JFrame {
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblContraseña)
+                                .addComponent(lblContrase)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(Password))
                             .addGroup(layout.createSequentialGroup()
@@ -70,7 +70,7 @@ public class Login extends javax.swing.JFrame {
                     .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblContraseña)
+                    .addComponent(lblContrase)
                     .addComponent(Password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addComponent(btnIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -91,7 +91,7 @@ public class Login extends javax.swing.JFrame {
             formVistaC.setVisible(true);
             dispose(); 
         }else{
-            JOptionPane.showMessageDialog(this, "Ingrese usuario y contraseña correctos");
+            JOptionPane.showMessageDialog(this, "Ingrese usuario o contra correctos");
         }
     }                                                         
 }
