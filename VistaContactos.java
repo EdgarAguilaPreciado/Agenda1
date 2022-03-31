@@ -6,30 +6,7 @@ import java.awt.BorderLayout;
 
 
 public class VistaContactos extends javax.swing.JFrame {
-    public static void main(String args[]) {
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VistaContactos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VistaContactos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VistaContactos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VistaContactos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VistaContactos().setVisible(true);
-            }
-        });
-    }
+   
     static ArrayList<Contacto> contactos = new ArrayList<Contacto>();
     private Contacto objContacto;
     static ArrayList<Tipo> tipos = new ArrayList<Tipo>();
@@ -198,7 +175,7 @@ public class VistaContactos extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jtDatos);
 
-        btn.setText("CANCELAR");
+        btn.setText("Salir Agenda");
         btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnActionPerformed(evt);

@@ -21,7 +21,7 @@ public class Login extends javax.swing.JFrame {
 
         lblUsuario.setText("Usuario");
 
-        lblContrase.setText("Contra");
+        lblContrase.setText("Contraseña");
 
         btnIngresar.setText("Ingresar");
         btnIngresar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -91,7 +91,7 @@ public class Login extends javax.swing.JFrame {
             formVistaC.setVisible(true);
             dispose(); 
         }else{
-            JOptionPane.showMessageDialog(this, "Ingrese usuario o contra correctos");
+            JOptionPane.showMessageDialog(this, "Ingrese usuario o contraseña correctos");
         }
     }                                                         
 }

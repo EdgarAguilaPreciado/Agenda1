@@ -1,4 +1,5 @@
 import javax.swing.JOptionPane;
+
 public class VistaModificar extends javax.swing.JFrame {
 
     Contacto c;
